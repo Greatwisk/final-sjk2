@@ -1,0 +1,125 @@
+/* Default styles for mobile first */
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #47a7bf;
+    padding: 10px 20px;
+    padding: 10px 20px;
+    min-height: 60px; 
+
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    display: none; /* changed from flex on 06/01*/
+    flex-direction: column;
+    justify-content: space-between; 
+    width: 100%;
+
+}
+/*nav ul li:last-child{
+    margin-right: 0;
+}*/
+nav ul.active {
+    display: flex; /* Show nav links when active */
+}
+
+.active{
+        display: flex;
+}/* added lines 28-30 on 06/01*/
+
+
+nav ul li {
+    margin: 10px 0;
+    
+}
+
+nav ul li a{
+text-decoration: none;
+color: white;
+position: relative;
+font-weight: normal;
+font-size: 30px;
+transition: color 0.3s, font-size 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: rgb(115, 55, 55); /* Change the color when hovering */
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#name {
+    text-align: center;
+    font-size: 3em; /* Adjust size as needed */
+    flex-grow: 1;
+}
+
+body {
+    background-color: rgb(192, 195, 185);
+    font-family: 'Roboto', sans-serif;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.hamburger {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+h1 {
+    color: rgb(127, 16, 46);
+    font-family: Arial;
+    font-size: 24 px;
+    font-weight: bold;
+}
+
+
+p {
+    font-size: 20px; 
+    font-weight: bold;
+    color: blue;
+}
+h2 {
+    color: rgb(85, 110, 134);
+    font-size: 24px;
+}
+
+section {
+    padding: 10px;
+    margin-top: 50px;
+}
+
+section + section {
+    margin-top: 50px;
+
+}
+h1.custom-align {
+    text-align: center;
+
+}
+
+h2.custom-align {
+    text-indent: 20px; 
+}
+
+
+.image-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+
+}
+#picture {
+    width: 50%;
+    height: auto;
+}
