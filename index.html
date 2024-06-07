@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seung Kim</title>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
+    <!---<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=noto+sans+korean:wght@400&display=swap">--->
+</head>
+
+<body>
+    <button class="hamburger">&#9776;</button>
+    <nav>
+        <ul class="nav-links"> <!-- 06/01 change-->
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li> <!-- Skills section -->
+            <li><a href="#projects">Projects</a></li> <!--Projects section -->
+            <li><a href="#connect">Connect</a></li>
+        </ul>
+        
+    </nav>
+    
+    <section>
+
+    <!--<h1 class="custom-align">Seung Kim</h1>-->
+    <h1 id= "name"> 김승 or Seung Kim</h1>
+        <!--<div class+ "image-wrapper"></div> -->
+    <div class="img-container">
+            <img src="img/IMG_0580.jpeg" " alt="picture" id= "picture">
+        
+    </div>
+
+    <section id="about">
+        <h2 class="custom-align">About:</h2>
+        <p>Code the Dream is for dreamers! Goal is to create amazing projects in the future.</p>
+    </section>
+
+    <section id="experience">
+    
+        <h2 class="custom-align">Experience:</h2>
+    
+        <ul>
+            <li>new student</li>
+            <li>Javascript enthusiast</li>
+            <li>Fortan</li>
+            <li>Visual Basic</li>
+        
+        </ul>
+    </section>
+
+ <!--  "Skills" section -->
+ <section id="skills">
+    <h2 class="custom-align">Skills Section:</h2>
+    <ul></ul>
+</section>
+
+<!-- "Projects" section -->
+<section id="projects">
+    <h2 class="custom-align">Projects:</h2>
+    <ul id ="repositories"></ul>
+</section>
+
+
+    <section id="connect">
+        <h2 class="custom-align" >Connect:</h2>
+        <ul>
+            <li>GitHub</li>
+            <li>Facebook</li>
+            <li>
+                <a href="https://github.com/Greatwisk/seung-kim-humea">GitHub</a>
+            </li>
+        
+        </ul>
+    </section>
+<!-- "Leave a Message" section -->
+    <section>
+        <h2>Leave a Message</h2>
+        <form name = "leave message">
+            <label for='usersName'>Name:</label>
+            <input type="text" id="usersName" name="usersName" required><br>
+            <label for="usersEmail">Email:</label>
+            <input type="email" id="usersEmail" name="usersEmail"required><br>
+            <label for="usersMessage">Message:</label>
+            <textarea id="usersMessage"name="usersMessage" required></textarea>
+            <button type="submit">Submit:</button>
+            
+        </form>
+    </section>
+<!-- "Add a Message List" section -->
+    <section id="messages">
+        <h2>Messages</h2>
+        <ul></ul>
+
+    </section>
+</section>
+
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <footer></footer>
+    <script src = "js/index.js"></script>
+    
+</body>
+</html>
