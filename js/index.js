@@ -17,11 +17,11 @@ document.addEventListener("DOMContentLoaded", function(){
 
  })
   //Add a footer element 
-  const body = document.body;
-  const footer = document.createElement('footer') ;
-  footer.textContent = '2024 Footer element added';
-  body.appendChild(footer);
-  console.log("Footer element added:", footer);
+  //const body = document.body;
+  //const footer = document.createElement('footer') ;
+  //footer.textContent = '2024 Footer element added';
+  //body.appendChild(footer);
+  //console.log("Footer element added:", footer);
 
   // insert Copyright Text in Footer
   const today = new Date();
@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function(){
   const existingFooter = document.querySelector('footer');
   const copyright = document.createElement('p');
   const myName = 'Seung Kim';
-  copyright.innerHTML = `${myName} ${thisYear}`;
+  copyright.innerHTML = `&copy;${myName} ${thisYear}`;
   existingFooter.appendChild(copyright);
 
   //Create List of Skills
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function(){
       //add event listener tp the removeButton 
       removeButton.addEventListener("click", function() {
       const entry = removeButton.parentNode;
-      entry.parentNode.remove();    
+      entry.remove();    
 
   });
 
@@ -143,6 +143,10 @@ fetch(`https://api.github.com/users/${githubUsername}/repos`)
   repositorySection.appendChild(errorMessage);
  });
 
+document.getElementById("dark-mode-toggle").addEventListener("click", function() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+});
 })
 
 
