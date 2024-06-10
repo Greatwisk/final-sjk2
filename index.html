@@ -29,7 +29,7 @@
     <h1 id= "name"> 김승 or Seung Kim</h1>
         <!--<div class+ "image-wrapper"></div> -->
     <div class="img-container">
-            <img src="img/IMG_0580.jpeg" " alt="picture" id= "picture">
+            <img src="img/IMG_0580.jpeg" " alt="picture" id= "picture" class="center">
         
     </div>
 
@@ -41,8 +41,8 @@
     <section id="experience">
     
         <h2 class="custom-align">Experience:</h2>
-    
-        <ul>
+        <section id=""experience-list-container"></section>
+        <ul class="experience-list">
             <li>new student</li>
             <li>Javascript enthusiast</li>
             <li>Fortan</li>
@@ -67,8 +67,9 @@
     <section id="connect">
         <h2 class="custom-align" >Connect:</h2>
         <ul>
-            <li>GitHub</li>
-            <li>Facebook</li>
+            <li>
+                <a href="mailto:sjk3627@gmail.com">sjk3627@gmail.com</a>
+            </li>
             <li>
                 <a href="https://github.com/Greatwisk/seung-kim-humea">GitHub</a>
             </li>
@@ -97,7 +98,7 @@
     </section>
 </section>
 
-<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<button id="dark-mode-toggle">Toggle Dark Mode</button>
     <footer></footer>
     <script src = "js/index.js"></script>
     
